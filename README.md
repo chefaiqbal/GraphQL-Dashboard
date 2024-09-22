@@ -1,16 +1,18 @@
 # 🌐 Web Application with GraphQL, JWT Authentication, and Data Visualization
 
-This project is a web application that demonstrates user authentication, data visualization, and interaction with a GraphQL API. It includes features such as JWT-based authentication, progress bars, radar charts, and a responsive user interface.
+This project is a recreation of the @Talent dashboard system of the Reboot01 school. It uses GraphQL queries for a dynamic dashboard and SVG charts from the GraphQL data. The web application demonstrates user authentication, data visualization, and interaction with a GraphQL API. It includes features such as JWT-based authentication, progress bars, and radar charts.
+
+## 🌐 Hosting
+
+This project is hosted at [https://chefaiqbal.github.io/](https://chefaiqbal.github.io/).
 
 ## 📋 Table of Contents
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
-- [GraphQL Queries](#graphql-queries)
-- [Learning Objectives](#learning-objectives)
+- [Learning Outcome](#learning-Outcome)
 
 ## ✨ Features
 
@@ -58,11 +60,11 @@ This project is a web application that demonstrates user authentication, data vi
 
 🎯 Learning Outcome
 
-🕸 GraphQL
-🛠 GraphiQL
-🌐 Hosting
-🔑 JWT
-🔒 Authentication
-🔐 Authorization
-🖥 UI/UX
+- 🕸 GraphQL
+- 🛠 GraphiQL
+- 🌐 Hosting
+- 🔑 JWT
+- 🔒 Authentication
+- 🔐 Authorization
+- 🖥 UI/UX
 
