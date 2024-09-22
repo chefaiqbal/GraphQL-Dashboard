@@ -58,7 +58,7 @@ This project is hosted at [https://chefaiqbal.github.io/](https://chefaiqbal.git
 - The dashboard displays various data visualizations including progress bars and radar charts.
 - You can log out by clicking the logout button, which will clear the JWT cookie and redirect you to the login page.
 
-🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 - 🕸 GraphQL
 - 🛠 GraphiQL
