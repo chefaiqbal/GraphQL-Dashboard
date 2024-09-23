@@ -489,20 +489,51 @@ window.addEventListener('resize', () => {
   }
   */
 
-  }
-  catch (error) {
+    // Add event listener to the logout button
+    document.getElementById('logout-button').addEventListener('click', async () => {
+      try {
+        // Call the expire endpoint
+        await fetch('https://learn.reboot01.com/api/auth/expire', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${Cookies.get('jwt')}`
+          }
+        });
+
+        // Call the signout endpoint
+        await fetch('https://learn.reboot01.com/api/auth/signout', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${Cookies.get('jwt')}`
+          }
+        });
+
+        // Clear the JWT cookie
+        Cookies.remove('jwt');
+
+        // Redirect to the login page
+        window.location.href = 'index.html';
+      } catch (error) {
+        console.error('Error during logout:', error);
+      }
+    });
+  } catch (error) {
     console.error(error);
   }
 }
 
+// Check if the JWT token is present and valid
+function checkAuth() {
+  const jwt = Cookies.get('jwt');
+  if (!jwt) {
+    // Redirect to the login page if the JWT token is not present
+    window.location.href = 'index.html';
+  }
+}
+
+// Call the checkAuth function on page load
+checkAuth();
+
+
 // Run the main function
 main();
-
-// Add event listener to the logout button
-document.getElementById('logout-button').addEventListener('click', () => {
-  // Clear the JWT cookie
-  Cookies.remove('jwt');
-
-  // Redirect to the login page
-  window.location.href = 'index.html';
-});
