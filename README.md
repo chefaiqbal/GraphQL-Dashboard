@@ -2,9 +2,6 @@
 
 This project is a recreation of the @Talent dashboard system of the Reboot01 school. It uses GraphQL queries for a dynamic dashboard and SVG charts from the GraphQL data. The web application demonstrates user authentication, data visualization, and interaction with a GraphQL API. It includes features such as JWT-based authentication, progress bars, and radar charts.
 
-## 🌐 Hosting
-
-This project is hosted at [https://chefaiqbal.github.io/](https://chefaiqbal.github.io/).
 
 ## 📋 Table of Contents
 
@@ -53,10 +50,14 @@ This project is hosted at [https://chefaiqbal.github.io/](https://chefaiqbal.git
 2. Enter your username/email and password.
 3. On successful login, you will be redirected to [`dashboard.html`].
 
+![Login Page](./login.png)
+
 ### 📊 Dashboard
 
 - The dashboard displays various data visualizations including progress bars and radar charts.
 - You can log out by clicking the logout button, which will clear the JWT cookie and redirect you to the login page.
+
+![Dashboard Page](./dash.png)
 
 ## 🎯 Learning Outcome
 
